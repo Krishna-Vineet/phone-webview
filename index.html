@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Chrome Page</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+  <nav>
+    <div id="date"></div>
+    <div id="day"></div>
+  </nav>
+
+
+  <!-- photo 3d effect -->
+  <div class="img_area">
+    <div class="img">
+      <div class="border b3"></div>
+      <div class="back">
+        <div class="img1"></div>
+        <div class="transparent"></div>
+        <div class="transparent"></div>
+        <div class="img4"></div>
+      </div>
+
+      <div class="border b1"></div>
+      <div class="border b2"></div>
+
+      <div class="front">
+        <div class="transparent"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="transparent"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="content">
+    <div class="social-buttons">
+
+      <a href="https://www.pw.live/study/batches/study" class="social-button social-button--pw" aria-label="PW">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="social-button social-button--gmail" aria-label="Gmail">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <a href="https://www.youtube.com/" class="social-button social-button--youtube" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://play.google.com/store/apps?utm_source=apac_med&hl=en-IN&utm_medium=hasem&utm_content=Dec1721&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-ap-Evergreen-Dec1721-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700058914996547_creativeid_480912526689_device_c&gclid=Cj0KCQjwqNqkBhDlARIsAFaxvwxriWDDYvxqRXVfvDNPFzsVgKSK6GFeUTcJEBdP9i94Ch5hwnvffvwaAs5zEALw_wcB&gclsrc=aw.ds&pli=1" class="social-button social-button--playstore" aria-label="Playstore">
+        <i class="fa-brands fa-google-play"></i>
+      </a>
+      <a href="https://photos.google.com/" class="social-button social-button--gphotos" aria-label="GPhotos">
+        <i class="fa-regular fa-image"></i>
+      </a>
+      <a href="https://web.telegram.org/a/" class="social-button social-button--telegram" aria-label="Telegram">
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+      <a href="https://poki.com/" class="social-button social-button--poki" aria-label="Poki">
+        <i class="fa-solid fa-gamepad"></i>
+      </a>
+      <a href="https://codepen.io/KrishnaVineet/pens/loved" class="social-button social-button--codepen" aria-label="CodePen">
+        <i class="fab fa-codepen"></i>
+      </a>
+      <a href="https://www.canva.com/" class="social-button social-button--canva" aria-label="Canva">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </a>
+      <a href="https://web.whatsapp.com/" class="social-button social-button--whatsapp" aria-label="Whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+      <a href="https://chat.openai.com/" class="social-button social-button--gpt" aria-label="GPT">
+        <i class="fa-solid fa-globe"></i>
+      </a>
+    </div>
+  </div>
+
+
+
+<script>
+
+
+    const now = new Date();
+    const dd = String(now.getDate()).padStart(2, '0');
+    const mm = String(now.getMonth() + 1).padStart(2, '0'); //January is 0!
+    const yyyy = now.getFullYear();
+    const date = dd + '/' + mm + '/' + yyyy;
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const dayIndex = now.getDay();
+    const day = dayNames[dayIndex];
+
+  document.getElementById("date").innerHTML = date;
+  document.getElementById("day").innerHTML = day;
+
+</script>
+</body>
+</html>
